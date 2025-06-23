@@ -1,6 +1,6 @@
 -- ## opts ## --
 vim.g.mapleader = " "
-vim.cmd("colorscheme retrobox")
+vim.cmd("colorscheme desert")
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -39,7 +39,7 @@ vim.opt.completeopt = "menu,menuone,noinsert"
 vim.opt.colorcolumn = "80"
 vim.opt.signcolumn = "yes"
 vim.opt.cursorline = true
-vim.opt.cursorcolumn = true
+vim.opt.cursorcolumn = false
 
 vim.opt.splitright = true
 vim.opt.splitbelow = true
@@ -58,8 +58,9 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 vim.keymap.set("n", "Q", "<nop>")
 
-vim.keymap.set("n", "<leader>bn", ":bnext<CR>")
-vim.keymap.set("n", "<leader>bp", ":bprevious<CR>")
+vim.keymap.set("n", "<leader>fb", ":w<CR>:!fbc % && ./%<<CR>")
+
+vim.keymap.set("n", "<C-i>", ":tabnew ~/.config/nvim/init.lua<CR>")
 
 -- ## plugin manager ##
 
