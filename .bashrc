@@ -7,5 +7,5 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias music='youtube-viewer -a'
+alias qb='qutebrowser -s qt.force_software_rendering chromium'
 PS1='[\u@\h \W]\$ '
