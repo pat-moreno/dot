@@ -25,7 +25,7 @@ cd ../st && sudo make clean install
 
 cd ../dwm && sudo make clean install && cd ~
 
-sudo pacman -S 7zip unzip tar wget pass gnupg openssh yt-dlp 
+sudo pacman -S wget pass gnupg openssh yt-dlp 
 
 amixer sset Master unmute 75%
 
