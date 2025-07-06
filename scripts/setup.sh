@@ -2,6 +2,10 @@
 
 sudo -v
 
+sudo pacman -S neovim xclip mpv ffmpeg alsa-utils qutebrowser
+
+cd ~
+
 git clone https://github.com/pat-moreno/dot && cd dot && stow --adopt --ignore='^scripts$' . && cd ~
 
 mkdir -r personal/builds && cd personal/builds
@@ -20,5 +24,12 @@ cd dmenu && sudo make clean install
 cd ../st && sudo make clean install
 
 cd ../dwm && sudo make clean install && cd ~
+
+sudo pacman -S 7zip unzip tar wget pass gnupg openssh yt-dlp 
+
+amixer sset Master unmute 75%
+
+cd personal/builds && git clone https://aur.archlinux.org/youtube-viewer-git.git && cd youtube-viewer-git/ && makepkg -sic && cd ~
+
 
 
