@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+qutebrowser -s qt.force_software_rendering chromium

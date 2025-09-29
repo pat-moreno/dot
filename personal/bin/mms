@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+archivo="$1"
+tmp="tmp_$$.mp3"
+
+read -p "Titulo: " titulo
+read -p "Artista: " artista
+read -p "Album: " album
+read -p "Orden: " orden
+read -p "Año: " ano
+
+if ffmpeg -i "$archivo" \
+    -metadata title="$titulo" \
+    -metadata artist="$artista" \
+    -metadata album="$album" \
+    -metadata track="$orden" \
+    -metadata date="$ano" \
+    -codec copy $tmp; \
+then 
+    rm "$archivo"
+    mv "$tmp" "$archivo"
+else
+    echo "error"
+fi
+

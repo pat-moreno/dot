@@ -59,10 +59,8 @@ vim.keymap.set("n", "Q", "<nop>")
 
 vim.keymap.set("n", "<leader>fb", ":w<CR>:!fbc % && ./%<<CR>")
 
-vim.keymap.set("n", "<C-i>", ":tabnew ~/.config/nvim/init.lua<CR>")
-
 -- ## plugin manager ##
-
+--[[
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -93,3 +91,6 @@ require("lazy").setup({
 })
 
 vim.cmd [[colorscheme moonfly]]
+--]]
+
+vim.cmd [[colorscheme vim]]

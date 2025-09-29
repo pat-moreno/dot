@@ -1,6 +1,7 @@
 #!/bin/sh
 
-setxkbmap es
-~/.fehbg &
+# DWM 
 
+setxkbmap es
 exec dwm
+
