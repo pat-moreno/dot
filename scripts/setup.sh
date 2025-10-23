@@ -1,7 +1,22 @@
 #!/usr/bin/env bash
 
 echo "Pacman NOCONFIRM"
-sudo pacman -S neovim xclip mpv ffmpeg alsa-utils qutebrowser xorg-server xorg-xinit libx11 libxinerama libxft libxrandr xf86-video-intel mesa ttf-jetbrains-mono noto-fonts-cjk feh wget pass gnupg openssh yt-dlp git stow man-db --noconfirm
+sudo pacman -S 
+neovim cmus mpv ffmpeg alsa-utils qutebrowser 
+xorg-server xorg-xinit libxinerama xf86-video-intel 
+noto-fonts-cjk noto-fonts
+pass gnupg openssh yt-dlp git stow man-db --noconfirm
+
+
+
+
+
+
+
+
+
+
+
 
 echo "MKDIR"
 mkdir -p $HOME/personal/builds
