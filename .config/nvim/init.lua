@@ -57,7 +57,8 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 vim.keymap.set("n", "Q", "<nop>")
 
-vim.keymap.set("n", "<leader>fb", ":w<CR>:!fbc % && ./%<<CR>")
+vim.keymap.set("n", "<leader>y", "\"+y")
+vim.keymap.set("v", "<leader>y", "\"+y")
 
 -- ## plugin manager ##
 --[[
